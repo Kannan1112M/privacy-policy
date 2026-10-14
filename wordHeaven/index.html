@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - WordHeaven | PulseCraft Studio</title>
+  <meta name="description" content="Official Privacy Policy for WordHeaven casual word puzzle game developed by PulseCraft Studio." />
+  <style>
+    :root {
+      --bg-primary: #0F172A;
+      --bg-card: #1E293B;
+      --bg-card-sub: #162032;
+      --border: rgba(148, 163, 184, 0.15);
+      --accent: #38BDF8;
+      --accent-glow: rgba(56, 189, 248, 0.2);
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-heading: #FFFFFF;
+      --badge-bg: rgba(56, 189, 248, 0.12);
+      --badge-text: #38BDF8;
+      --success: #10B981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    h1 {
+      font-size: 34px;
+      font-weight: 800;
+      color: var(--text-heading);
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+
+    .meta-info {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .summary-card {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(30, 41, 59, 0.8));
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 36px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .summary-card h2 {
+      font-size: 18px;
+      color: var(--accent);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .summary-card ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    .summary-card li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    .summary-card li::before {
+      content: "✓";
+      color: var(--success);
+      font-weight: bold;
+    }
+
+    .policy-content {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 36px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2.section-heading {
+      font-size: 20px;
+      color: var(--text-heading);
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    p strong {
+      color: var(--text-main);
+    }
+
+    ul.detail-list {
+      margin-left: 20px;
+      margin-bottom: 14px;
+      color: var(--text-muted);
+      font-size: 14.5px;
+    }
+
+    ul.detail-list li {
+      margin-bottom: 8px;
+    }
+
+    ul.detail-list li strong {
+      color: var(--text-main);
+    }
+
+    .info-box {
+      background: var(--bg-card-sub);
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 6px;
+      margin: 16px 0;
+    }
+
+    .info-box p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 12px 14px;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--bg-card-sub);
+      color: var(--text-heading);
+    }
+
+    td {
+      color: var(--text-muted);
+    }
+
+    td strong {
+      color: var(--text-main);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 20px 12px;
+      }
+      .policy-content {
+        padding: 22px;
+      }
+      h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="app-badge">🎮 PulseCraft Studio · Mobile Gaming</div>
+      <h1>Privacy Policy for WordHeaven</h1>
+      <p class="meta-info">
+        <strong>Effective Date:</strong> October 14, 2026 &nbsp;|&nbsp; 
+        <strong>Package Identifier:</strong> com.pulsecraft.wordheaven &nbsp;|&nbsp;
+        <strong>Version:</strong> 1.0.0
+      </p>
+    </header>
+
+    <!-- Quick Summary Card -->
+    <div class="summary-card">
+      <h2>🛡️ Summary at a Glance</h2>
+      <ul>
+        <li>100% Offline-capable core crossword gameplay.</li>
+        <li>Zero Personal Identifiable Information (PII) collected.</li>
+        <li>No user account registration or email required.</li>
+        <li>All game saves, coins, and levels reside on your device.</li>
+        <li>COPPA, GDPR & California CCPA compliant.</li>
+        <li>Third-party ads served safely via Google AdMob.</li>
+      </ul>
+    </div>
+
+    <!-- Full Policy Body -->
+    <div class="policy-content">
+
+      <!-- Section 1 -->
+      <section>
+        <h2 class="section-heading">1. Introduction</h2>
+        <p>
+          Welcome to <strong>WordHeaven</strong> ("the Game", "we", "our", or "us"), developed and published by <strong>PulseCraft Studio</strong>. WordHeaven is a 2D anagram crossword puzzle game designed for mental agility, vocabulary enrichment, and relaxation on Android devices.
+        </p>
+        <p>
+          We respect your privacy and are committed to protecting it through transparent data practices. This Privacy Policy outlines what information is processed when you download, install, or play WordHeaven, and how your data is handled in strict compliance with the Google Play Developer Distribution Agreement, the Google Play Families Policy, and international privacy standards.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section>
+        <h2 class="section-heading">2. Information We Do NOT Collect</h2>
+        <p>
+          WordHeaven is engineered from the ground up as an <strong>offline-first</strong> game. We do not require, request, access, or store any of the following personal data:
+        </p>
+        <ul class="detail-list">
+          <li><strong>No Real Names or Contact Data:</strong> We never collect your real name, email address, physical address, or phone number.</li>
+          <li><strong>No Account Credentials:</strong> No sign-in or social account linking (Google, Facebook, Apple) is required to play the full campaign.</li>
+          <li><strong>No Financial / Payment Data:</strong> We do not collect credit card, bank account, or billing details.</li>
+          <li><strong>No Precise Geolocation:</strong> We never request or access GPS or precise location hardware.</li>
+          <li><strong>No Biometric or Device Media Data:</strong> We do not access your photos, camera, microphone, contacts, or storage files outside of our own sandboxed application directory.</li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section>
+        <h2 class="section-heading">3. Information Processed Locally on Your Device</h2>
+        <p>
+          To maintain your puzzle progress and unlockable awards across sessions without requiring cloud accounts, the following data is stored <strong>locally in sandboxed device memory</strong> (via React Native AsyncStorage):
+        </p>
+        <ul class="detail-list">
+          <li><strong>Explorer Name:</strong> The optional player nickname you type upon first launch is kept exclusively on your local device. It is never uploaded to remote external servers.</li>
+          <li><strong>Gameplay Progression:</strong> Completed level numbers (1–100+), star ratings (1 to 3 stars), high scores, and achievement badges unlocked.</li>
+          <li><strong>In-Game Virtual Inventory:</strong> Earned coin balances and available hint tokens (coins and hints have zero real-world monetary value).</li>
+          <li><strong>Daily Challenge & Event State:</strong> Date stamps for current puzzle streaks and event milestones.</li>
+          <li><strong>Game Settings:</strong> Audio mute toggle, sound volume preferences, selected visual theme, and notification opt-in status.</li>
+        </ul>
+        <div class="info-box">
+          <p>
+            💡 <strong>User Control:</strong> Because all game data is stored exclusively on your device, you have complete sovereignty over your data. Clearing app data or uninstalling WordHeaven permanently removes all local progress.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section>
+        <h2 class="section-heading">4. Third-Party Services & Technologies</h2>
+        <p>
+          WordHeaven integrates select, industry-standard Google SDKs solely to provide advertising, platform updates, and baseline application stability:
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Service Provider</th>
+              <th>Purpose</th>
+              <th>Privacy Information</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Google AdMob</strong><br>(Google LLC)</td>
+              <td>Delivers banner advertisements and optional rewarded video ads (granting free in-game hints).</td>
+              <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> &bull; <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Policies</a></td>
+            </tr>
+            <tr>
+              <td><strong>Google Play In-App Updates</strong><br>(Google LLC)</td>
+              <td>Checks for mandatory and recommended game updates directly through the official Google Play Store.</td>
+              <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Privacy</a></td>
+            </tr>
+            <tr>
+              <td><strong>Google Play Services</strong><br>(Google LLC)</td>
+              <td>Core Android platform runtime services and performance diagnostics.</td>
+              <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Services Terms</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          These third-party providers may automatically collect non-personally identifiable technical diagnostic information, including device model, operating system version, mobile network carrier, approximate IP-based regional location, and mobile advertising identifiers (such as the Google Advertising ID / GAID), governed strictly by Google's Privacy Policies.
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section>
+        <h2 class="section-heading">5. Advertising Practices & Testing Safety</h2>
+        <p>
+          WordHeaven employs Google AdMob to support ongoing development:
+        </p>
+        <ul class="detail-list">
+          <li><strong>Safe Testing Mode:</strong> During open testing and beta releases, WordHeaven strictly enforces Google-approved Test Ad Units to protect testers from accidental click penalties.</li>
+          <li><strong>No Inappropriate Content:</strong> All ad placements are filtered through Google AdMob content category controls to ensure family-friendly, non-sensitive content.</li>
+          <li><strong>Opting Out of Personalized Ads:</strong> Players can opt out of personalized interest-based advertising at any time through their Android device settings:
+            <br /><em>Settings &rarr; Google &rarr; Ads &rarr; Reset or Delete Advertising ID</em>.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section 6 -->
+      <section>
+        <h2 class="section-heading">6. Android System Permissions</h2>
+        <p>
+          WordHeaven requests only the minimum necessary permissions required for functional operation:
+        </p>
+        <ul class="detail-list">
+          <li><code>android.permission.INTERNET</code>: Enables AdMob ad delivery and Google Play in-app update checks. Core word puzzles remain 100% playable without an internet connection.</li>
+          <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Detects offline status gracefully to prevent unnecessary network queries when disconnected.</li>
+          <li><code>android.permission.VIBRATE</code>: Drives subtle haptic feedback vibrations when swiping letters on the anagram wheel.</li>
+          <li><code>android.permission.POST_NOTIFICATIONS</code> (Android 13+): Enables optional local daily puzzle reminders and streak alerts. Players may decline or toggle notifications off at any time in Settings.</li>
+        </ul>
+      </section>
+
+      <!-- Section 7 -->
+      <section>
+        <h2 class="section-heading">7. Children's Privacy (COPPA & Google Play Families)</h2>
+        <p>
+          WordHeaven is a general-audience word puzzle game suitable for all ages:
+        </p>
+        <ul class="detail-list">
+          <li>We do not knowingly collect personal information from children under 13 (or under 16 in the European Economic Area).</li>
+          <li>No personal data collection forms, external web links, chat rooms, or social features exist inside the game.</li>
+          <li>If you believe a child has provided personal information to us, please contact us immediately, and we will take immediate steps to delete any such data.</li>
+        </ul>
+      </section>
+
+      <!-- Section 8 -->
+      <section>
+        <h2 class="section-heading">8. User Rights (GDPR & CCPA / CPRA)</h2>
+        <p>
+          Under international privacy laws including the <strong>General Data Protection Regulation (GDPR)</strong> and the <strong>California Consumer Privacy Act (CCPA)</strong>, you have rights regarding your personal data:
+        </p>
+        <ul class="detail-list">
+          <li><strong>Right to Know & Access:</strong> Because we collect zero server-side personal data, all data related to your play is already stored directly on your phone.</li>
+          <li><strong>Right to Delete ("Forget Me"):</strong> You can erase all game data instantly by navigating to Android <em>Settings &rarr; Apps &rarr; WordHeaven &rarr; Storage &rarr; Clear Data</em>.</li>
+          <li><strong>Right to Opt-Out of Sale:</strong> We do not sell, rent, or monetize your personal data.</li>
+        </ul>
+      </section>
+
+      <!-- Section 9 -->
+      <section>
+        <h2 class="section-heading">9. Security Measures</h2>
+        <p>
+          We employ sandboxed local storage, proactive Google Play App Signing, and strict release code obfuscation via ProGuard/R8 to protect game binaries and internal logic against unauthorized modification.
+        </p>
+      </section>
+
+      <!-- Section 10 -->
+      <section>
+        <h2 class="section-heading">10. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect game updates or legal requirements. Any modifications will be posted directly to this document with an updated "Last Updated" date. Continued use of WordHeaven following any changes indicates your acceptance.
+        </p>
+      </section>
+
+      <!-- Section 11 -->
+      <section>
+        <h2 class="section-heading">11. Contact Information</h2>
+        <p>
+          If you have questions, feedback, or data privacy inquiries regarding WordHeaven, please reach out to us:
+        </p>
+        <div class="info-box">
+          <p>
+            <strong>Studio:</strong> PulseCraft Studio<br />
+            <strong>Game Title:</strong> WordHeaven<br />
+            <strong>Package Identifier:</strong> com.pulsecraft.wordheaven<br />
+            <strong>Support & Privacy Email:</strong> <a href="mailto:support@pulsecraft.com" style="color: var(--accent);">support@pulsecraft.com</a>
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      <p>&copy; 2026 PulseCraft Studio. All rights reserved. &bull; WordHeaven</p>
+    </footer>
+  </div>
+
+</body>
+</html>
