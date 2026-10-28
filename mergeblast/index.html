@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Merge Blast | PulseCraft Games</title>
+  <meta name="description" content="Privacy Policy for Merge Blast 2048 puzzle game by PulseCraft Games. Learn how we handle your data, advertising, and user privacy.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Favicon / App Icon -->
+  <link rel="icon" type="image/png" href="assets/icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-gradient: radial-gradient(circle at 10% 20%, #0d1117 0%, #080a0f 90%);
+      --surface-bg: rgba(22, 27, 34, 0.75);
+      --surface-border: rgba(255, 255, 255, 0.08);
+      --card-bg: rgba(30, 38, 50, 0.55);
+      --card-border: rgba(255, 255, 255, 0.06);
+      --primary: #f59e0b;
+      --primary-glow: rgba(245, 158, 11, 0.25);
+      --accent: #8b5cf6;
+      --accent-glow: rgba(139, 92, 246, 0.2);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --tag-bg: rgba(245, 158, 11, 0.12);
+      --tag-border: rgba(245, 158, 11, 0.3);
+      --table-header: rgba(15, 23, 42, 0.85);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    [data-theme="light"] {
+      --bg-gradient: radial-gradient(circle at 10% 20%, #f8fafc 0%, #e2e8f0 100%);
+      --surface-bg: rgba(255, 255, 255, 0.88);
+      --surface-border: rgba(0, 0, 0, 0.08);
+      --card-bg: rgba(241, 245, 249, 0.75);
+      --card-border: rgba(0, 0, 0, 0.06);
+      --primary: #d97706;
+      --primary-glow: rgba(217, 119, 6, 0.2);
+      --accent: #7c3aed;
+      --accent-glow: rgba(124, 58, 237, 0.15);
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-dim: #94a3b8;
+      --tag-bg: rgba(217, 119, 6, 0.1);
+      --tag-border: rgba(217, 119, 6, 0.25);
+      --table-header: rgba(226, 232, 240, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      line-height: 1.7;
+      min-height: 100vh;
+      overflow-x: hidden;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* Ambient background glows */
+    .ambient-glow {
+      position: fixed;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.45;
+    }
+
+    .glow-1 {
+      top: -150px;
+      left: 10%;
+      background: var(--primary-glow);
+    }
+
+    .glow-2 {
+      top: 40%;
+      right: -150px;
+      background: var(--accent-glow);
+    }
+
+    /* Header Nav */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: var(--surface-bg);
+      border-bottom: 1px solid var(--surface-border);
+      transition: all 0.3s ease;
+    }
+
+    .header-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #f59e0b, #ef4444);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-developer {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid var(--surface-border);
+      background: var(--card-bg);
+      color: var(--text-main);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    /* Hero / Banner */
+    .hero-banner {
+      position: relative;
+      z-index: 1;
+      max-width: 1080px;
+      margin: 40px auto 32px;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .policy-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--tag-bg);
+      border: 1px solid var(--tag-border);
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+
+    h1.page-title {
+      font-family: var(--font-heading);
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, var(--text-main) 30%, var(--primary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .meta-details {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Highlights Overview Grid */
+    .highlight-grid {
+      position: relative;
+      z-index: 1;
+      max-width: 1080px;
+      margin: 0 auto 40px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+    }
+
+    .highlight-card {
+      background: var(--surface-bg);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--primary);
+    }
+
+    .highlight-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .highlight-title {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .highlight-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Main Content Layout */
+    .layout-container {
+      position: relative;
+      z-index: 1;
+      max-width: 1080px;
+      margin: 0 auto 60px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    @media (max-width: 860px) {
+      .layout-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .table-of-contents {
+        display: none;
+      }
+      h1.page-title {
+        font-size: 2.1rem;
+      }
+    }
+
+    /* Sidebar Table of Contents */
+    .table-of-contents {
+      position: sticky;
+      top: 90px;
+      background: var(--surface-bg);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      backdrop-filter: blur(12px);
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+
+    .toc-title {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 14px;
+      color: var(--primary);
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .toc-link {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      display: block;
+      transition: all 0.15s ease;
+    }
+
+    .toc-link:hover,
+    .toc-link.active {
+      color: var(--text-main);
+      background: var(--card-bg);
+      font-weight: 600;
+    }
+
+    /* Policy Content Sections */
+    .policy-content {
+      background: var(--surface-bg);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    @media (max-width: 600px) {
+      .policy-content {
+        padding: 24px;
+      }
+    }
+
+    .policy-section {
+      margin-bottom: 40px;
+      scroll-margin-top: 100px;
+    }
+
+    .policy-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-main);
+      border-bottom: 1px solid var(--surface-border);
+      padding-bottom: 8px;
+    }
+
+    .section-num {
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    .policy-section p {
+      margin-bottom: 14px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .policy-section p strong {
+      color: var(--text-main);
+    }
+
+    .policy-section ul {
+      margin: 12px 0 16px 20px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .policy-section li {
+      margin-bottom: 8px;
+    }
+
+    .policy-section li strong {
+      color: var(--text-main);
+    }
+
+    /* Tables */
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--surface-border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      text-align: left;
+    }
+
+    th {
+      background: var(--table-header);
+      padding: 12px 16px;
+      color: var(--text-main);
+      font-weight: 600;
+      border-bottom: 1px solid var(--surface-border);
+    }
+
+    td {
+      padding: 12px 16px;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Alert / Notice callouts */
+    .callout {
+      background: var(--card-bg);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+
+    .callout p {
+      margin: 0;
+      color: var(--text-main);
+      font-size: 0.9rem;
+    }
+
+    .callout-link {
+      color: var(--primary);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    /* Contact Box */
+    .contact-card {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(139, 92, 246, 0.08));
+      border: 1px solid var(--primary-glow);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-top: 20px;
+    }
+
+    .contact-card h4 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    .contact-email {
+      display: inline-block;
+      margin-top: 8px;
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .contact-email:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      border-top: 1px solid var(--surface-border);
+      background: var(--surface-bg);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+      }
+      .site-header, .table-of-contents, .highlight-grid, .ambient-glow, .btn, .site-footer {
+        display: none !important;
+      }
+      .layout-container {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      .policy-content {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient glowing backdrop -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#" class="brand" id="brand-link">
+        <div class="brand-icon">2048</div>
+        <div class="brand-text">
+          <span class="brand-name">Merge Blast</span>
+          <span class="brand-developer">PulseCraft Games</span>
+        </div>
+      </a>
+      <div class="header-actions">
+        <button type="button" class="btn" id="theme-toggle-btn" aria-label="Toggle theme" onclick="toggleTheme()">
+          <span id="theme-icon">☀️</span>
+          <span id="theme-label">Light</span>
+        </button>
+        <button type="button" class="btn" id="print-btn" onclick="window.print()">
+          🖨️ Print
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="hero-banner" id="hero-banner">
+    <div class="policy-badge">🛡️ Legal & Privacy Notice</div>
+    <h1 class="page-title">Privacy Policy</h1>
+    <div class="meta-details">
+      <div class="meta-item">
+        <span>📅 Last Updated:</span>
+        <strong>October 28, 2026</strong>
+      </div>
+      <div class="meta-item">
+        <span>🎮 Application:</span>
+        <strong>Merge Blast 2048 (Android)</strong>
+      </div>
+      <div class="meta-item">
+        <span>🏢 Publisher:</span>
+        <strong>PulseCraft Games</strong>
+      </div>
+      <div class="meta-item">
+        <span>📦 Package:</span>
+        <code>com.aistudio.mergeblast.pxwqyz</code>
+      </div>
+    </div>
+  </section>
+
+  <!-- At a Glance Highlights -->
+  <section class="highlight-grid" id="highlight-grid">
+    <div class="highlight-card">
+      <div class="highlight-icon">🔒</div>
+      <div class="highlight-title">No Account Required</div>
+      <div class="highlight-desc">Play immediately without registering, submitting email, or creating any profile.</div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-icon">💾</div>
+      <div class="highlight-title">100% Local Game Saves</div>
+      <div class="highlight-desc">High scores, Gems balance, theme unlocks, and board stats stay locally on your device.</div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-icon">📢</div>
+      <div class="highlight-title">AdMob Advertising</div>
+      <div class="highlight-desc">Banner and interstitial ads provided by Google Mobile Ads with device privacy controls.</div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-icon">👶</div>
+      <div class="highlight-title">Child & Family Safe</div>
+      <div class="highlight-desc">COPPA compliant gameplay suitable for all age brackets without behavioral profiling of children.</div>
+    </div>
+  </section>
+
+  <!-- Main Layout -->
+  <main class="layout-container" id="main-content">
+    
+    <!-- Table of Contents Sidebar -->
+    <aside class="table-of-contents" id="toc-aside">
+      <div class="toc-title">Quick Navigation</div>
+      <ul class="toc-list">
+        <li><a href="#overview" class="toc-link">1. Overview</a></li>
+        <li><a href="#data-collection" class="toc-link">2. Information We Collect</a></li>
+        <li><a href="#data-usage" class="toc-link">3. How We Use Data</a></li>
+        <li><a href="#third-parties" class="toc-link">4. Third-Party Services & Ads</a></li>
+        <li><a href="#permissions" class="toc-link">5. Device Permissions</a></li>
+        <li><a href="#children" class="toc-link">6. Children's Privacy (COPPA)</a></li>
+        <li><a href="#security" class="toc-link">7. Data Storage & Security</a></li>
+        <li><a href="#user-rights" class="toc-link">8. Your Rights & Choices</a></li>
+        <li><a href="#updates" class="toc-link">9. Changes to This Policy</a></li>
+        <li><a href="#contact" class="toc-link">10. Contact Us</a></li>
+      </ul>
+    </aside>
+
+    <!-- Policy Content Body -->
+    <article class="policy-content" id="policy-article">
+      
+      <!-- Section 1 -->
+      <section class="policy-section" id="overview">
+        <h2 class="section-title"><span class="section-num">01.</span> Overview</h2>
+        <p>
+          Welcome to <strong>Merge Blast</strong> (the "Game" or "Application"), published and developed by <strong>PulseCraft Games</strong> ("we", "our", or "us"). We value your privacy and are committed to maintaining transparent practices regarding information processing.
+        </p>
+        <p>
+          This Privacy Policy explains what information may be accessed, gathered, or utilized when you install and enjoy Merge Blast on Android devices via Google Play. By installing or playing the Game, you agree to the practices outlined in this policy.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="policy-section" id="data-collection">
+        <h2 class="section-title"><span class="section-num">02.</span> Information We Collect</h2>
+        <p>
+          We design our puzzle games to operate with minimal data footprint. We do <strong>not</strong> collect personally identifying information such as your name, residential address, telephone number, or email address during normal gameplay.
+        </p>
+        
+        <p><strong>A. Information Stored Locally on Your Device:</strong></p>
+        <ul>
+          <li><strong>Gameplay Progress:</strong> Highest score per puzzle mode (Classic 2048, Drop Merge, Line Connect, Hexa Number Quest), active board state, and undo history.</li>
+          <li><strong>Economy & Cosmetics:</strong> Total Gems accumulated, daily mystery gift countdown timers, and unlocked cosmetic avatars and color palettes.</li>
+          <li><strong>Game Settings:</strong> Audio toggle, haptic vibration preferences, and high-contrast theme selection.</li>
+        </ul>
+        <p><em>Note: This data is stored strictly in your device's private app storage using Android SharedPreferences and does not transmit to our servers.</em></p>
+
+        <p><strong>B. Information Automatically Processed by Third-Party SDKs:</strong></p>
+        <ul>
+          <li><strong>Device Identifiers:</strong> Non-permanent advertising identifiers (Google Advertising ID / GAID) according to your device's privacy settings.</li>
+          <li><strong>Technical Diagnostics:</strong> Operating system version, device model, language setting, coarse geographical area (country/region), and crash reports.</li>
+          <li><strong>Ad Interactions:</strong> Metrics related to impressions, clicks, and video completion rates.</li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="policy-section" id="data-usage">
+        <h2 class="section-title"><span class="section-num">03.</span> How Information Is Used</h2>
+        <p>The limited technical information handled during game execution is utilized for:</p>
+        <ul>
+          <li><strong>Delivering Core Gameplay:</strong> Remembering your unlocked puzzle levels, personal records, and sound/haptic preferences.</li>
+          <li><strong>Displaying Advertisements:</strong> Serving contextually appropriate ads to keep Merge Blast free to download and play for all users.</li>
+          <li><strong>Stability & Maintenance:</strong> Detecting crashes, fixing memory bottlenecks, and optimizing frame rendering across various Android screen sizes.</li>
+          <li><strong>Compliance & Safety:</strong> Preventing automated fraud and upholding Google Play Developer Distribution Agreement standards.</li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="policy-section" id="third-parties">
+        <h2 class="section-title"><span class="section-num">04.</span> Third-Party Services & Advertising</h2>
+        <p>
+          Merge Blast incorporates third-party Software Development Kits (SDKs) provided by Google. These providers may collect information according to their respective privacy policies:
+        </p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Service Provider</th>
+                <th>Purpose</th>
+                <th>Privacy Policy Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Google AdMob</strong></td>
+                <td>Mobile banner & interstitial ad delivery</td>
+                <td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" class="callout-link">Google Ads Policy</a></td>
+              </tr>
+              <tr>
+                <td><strong>Google Play Services</strong></td>
+                <td>App distribution, essential runtime APIs & security</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="callout-link">Google Privacy Policy</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout">
+          <p>
+            💡 <strong>Your Ad Choices:</strong> You can manage, reset, or delete your Advertising ID on your Android device at any time by navigating to <code>Settings &rarr; Google &rarr; Ads &rarr; Reset or Delete advertising ID</code>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="policy-section" id="permissions">
+        <h2 class="section-title"><span class="section-num">05.</span> Android Device Permissions</h2>
+        <p>
+          Merge Blast declares only essential permissions in its <code>AndroidManifest.xml</code> to deliver intended gameplay:
+        </p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Technical Name</th>
+                <th>Reason for Request</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Internet Access</strong></td>
+                <td><code>android.permission.INTERNET</code></td>
+                <td>Required by Google AdMob to load non-intrusive advertisements.</td>
+              </tr>
+              <tr>
+                <td><strong>Vibration / Haptics</strong></td>
+                <td><code>android.permission.VIBRATE</code></td>
+                <td>Provides tactile feedback when tiles collide, merge, or achieve high scores (can be toggled in game settings).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The Game does <strong>not</strong> request sensitive permissions such as Camera, Microphone, GPS Location, Contacts, or File Storage.</p>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="policy-section" id="children">
+        <h2 class="section-title"><span class="section-num">06.</span> Children's Privacy (COPPA Compliance)</h2>
+        <p>
+          We are committed to protecting the privacy of young players. Merge Blast is designed as a family-friendly number arcade game suitable for all ages.
+        </p>
+        <ul>
+          <li>We do not knowingly collect, store, or solicit personal data from children under the age of 13 (or under the applicable age limit in your jurisdiction).</li>
+          <li>Where advertising is displayed, we configure advertising SDKs to comply with Google Play Families Policy requirements and COPPA regulations.</li>
+          <li>If you believe that a minor has provided us with personal information without parental consent, please contact us immediately, and we will promptly take appropriate action.</li>
+        </ul>
+      </section>
+
+      <!-- Section 7 -->
+      <section class="policy-section" id="security">
+        <h2 class="section-title"><span class="section-num">07.</span> Data Storage, Retention & Security</h2>
+        <p>
+          Because game states and gems are stored locally on your device, you maintain full control over your data.
+        </p>
+        <ul>
+          <li><strong>Data Retention:</strong> Progress remains on your device until you clear the application's storage in Android settings or uninstall the Game.</li>
+          <li><strong>Data Security:</strong> We utilize standard Android sandboxing and isolated storage mechanisms to ensure game preferences cannot be accessed by unauthorized applications.</li>
+        </ul>
+      </section>
+
+      <!-- Section 8 -->
+      <section class="policy-section" id="user-rights">
+        <h2 class="section-title"><span class="section-num">08.</span> Your Rights & Privacy Choices</h2>
+        <p>
+          Depending on your location (such as the European Economic Area under <strong>GDPR</strong> or California under the <strong>CCPA/CPRA</strong>), you possess specific privacy rights:
+        </p>
+        <ul>
+          <li><strong>Right to Deletion:</strong> You can completely erase all stored game records simply by clearing the application storage via <code>Settings &rarr; Apps &rarr; Merge Blast &rarr; Storage &rarr; Clear Data</code> or uninstalling the app.</li>
+          <li><strong>Opting Out of Targeted Advertising:</strong> You can opt out of personalized ads directly within Android OS settings or via the Digital Advertising Alliance at <a href="https://youradchoices.com/" target="_blank" rel="noopener noreferrer" class="callout-link">youradchoices.com</a>.</li>
+          <li><strong>Inquiries & Concerns:</strong> You can reach out directly to our team regarding any privacy question.</li>
+        </ul>
+      </section>
+
+      <!-- Section 9 -->
+      <section class="policy-section" id="updates">
+        <h2 class="section-title"><span class="section-num">09.</span> Changes to This Privacy Policy</h2>
+        <p>
+          We may update our Privacy Policy periodically to reflect enhancements, new game modes, or changes in regulatory standards. Any revisions will be published on this page with an updated "Last Updated" date at the top. We encourage you to review this policy occasionally.
+        </p>
+      </section>
+
+      <!-- Section 10 -->
+      <section class="policy-section" id="contact">
+        <h2 class="section-title"><span class="section-num">10.</span> Contact Us</h2>
+        <p>
+          If you have any questions, feedback, or concerns regarding this Privacy Policy or Merge Blast, please reach out to us:
+        </p>
+
+        <div class="contact-card">
+          <h4>PulseCraft Games Support</h4>
+          <p>Developer: <strong>PulseCraft Games</strong></p>
+          <p>Application: <strong>Merge Blast 2048</strong></p>
+          <p>Package ID: <code>com.aistudio.mergeblast.pxwqyz</code></p>
+          <a href="mailto:pulsecraftgames@gmail.com" class="contact-email">✉️ pulsecraftgames@gmail.com</a>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-links">
+      <a href="#overview">Overview</a>
+      <a href="#third-parties">AdMob & SDKs</a>
+      <a href="#permissions">Permissions</a>
+      <a href="#children">COPPA</a>
+      <a href="#contact">Contact Support</a>
+    </div>
+    <p>&copy; 2026 PulseCraft Games. All rights reserved. Merge Blast is a trademark of PulseCraft Games.</p>
+  </footer>
+
+  <!-- Theme Toggle & Active TOC script -->
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      const target = current === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', target);
+      
+      const icon = document.getElementById('theme-icon');
+      const label = document.getElementById('theme-label');
+      if (target === 'light') {
+        icon.textContent = '🌙';
+        label.textContent = 'Dark';
+      } else {
+        icon.textContent = '☀️';
+        label.textContent = 'Light';
+      }
+      localStorage.setItem('mb_theme', target);
+    }
+
+    // Restore saved theme preference
+    (function initTheme() {
+      const saved = localStorage.getItem('mb_theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.getElementById('theme-icon').textContent = '🌙';
+        document.getElementById('theme-label').textContent = 'Dark';
+      }
+    })();
+
+    // Active Table of Contents highlighting
+    const sections = document.querySelectorAll('.policy-section');
+    const navLinks = document.querySelectorAll('.toc-link');
+
+    window.addEventListener('scroll', () => {
+      let currentSectionId = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (window.pageYOffset >= sectionTop) {
+          currentSectionId = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
